@@ -3,14 +3,15 @@ const Card = require('./card');
 
 class List extends React.Component {
     
-    render() {
+    render(props) {
+        var cards = this.props.cards.map(function(card, index) {
+            return <Card text={card} key={index} />
+        })
         return(
             <div className='list'>
             <div>
             {this.props.title}
-            <Card text={this.props.cards[0]}/>
-            <Card text={this.props.cards[1]}/>
-            <Card text={this.props.cards[2]}/>
+            {cards}
             </div>
             <div>
             <form onSubmit={this.props.onSubmit}>
