@@ -4,5 +4,5 @@ const ReactDOM = require('react-dom');
 const Board = require('./components/board');
 
 document.addEventListener('DOMContentLoaded', function() {
-    ReactDOM.render(<Board />, document.getElementById('app'));
+    ReactDOM.render(<Board title="React Board" lists={['A','B','C']}/>, document.getElementById('app'));
 });
