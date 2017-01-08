@@ -26,7 +26,6 @@ class ListContainer extends React.Component {
     }
     
     render() {
-        
         return(
             <List title={this.props.title} cards={this.state.cards} onChange={this.onAddInputChanged.bind(this)} onSubmit={this.onAddSubmit.bind(this)}/>
             )

@@ -9,16 +9,12 @@ class List extends React.Component {
         })
         return(
             <div className='list'>
-            <div>
             {this.props.title}
             {cards}
-            </div>
-            <div>
             <form onSubmit={this.props.onSubmit}>
             <input onChange={this.props.onChange}></input>
             <button>Submit</button>
             </form>
-            </div>
             </div>
             )
     }
